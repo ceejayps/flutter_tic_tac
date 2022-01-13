@@ -137,6 +137,10 @@ class _MainPageState extends State<MainPage> {
     }
   }
 
+  bool isEnd() =>
+      matrix.every((values) => values.every((value) => value != Player.none));
+
+  /// Check out logic here: https://stackoverflow.com/a/1058804
 
 
 
