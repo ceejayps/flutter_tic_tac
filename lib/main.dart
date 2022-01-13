@@ -57,6 +57,18 @@ class _MainPageState extends State<MainPage> {
     setEmptyFields();
   }
 
+  void setEmptyFields() => setState(() => matrix = List.generate(
+        countMatrix,
+        (_) => List.generate(countMatrix, (_) => Player.none),
+      ));
+
+  Color getBackgroundColor() {
+    final thisMove = lastMove == Player.X ? Player.O : Player.X;
+
+    return getFieldColor(thisMove).withAlpha(150);
+  }
+
+  @override
 
 
 
