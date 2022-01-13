@@ -156,4 +156,21 @@ class _MainPageState extends State<MainPage> {
     return row == n || col == n || diag == n || rdiag == n;
   }
 
-
+  Future showEndDialog(String title) => showDialog(
+        context: context,
+        barrierDismissible: false,
+        builder: (context) => AlertDialog(
+          title: Text(title),
+          content: Text('Press to Restart the Game'),
+          actions: [
+            ElevatedButton(
+              onPressed: () {
+                setEmptyFields();
+                Navigator.of(context).pop();
+              },
+              child: Text('Restart'),
+            )
+          ],
+        ),
+      );
+}
