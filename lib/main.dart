@@ -11,3 +11,11 @@ Future main() async {
 
   runApp(MyApp());
 }
+
+class MyApp extends StatelessWidget {
+  static final String title = 'Tic Tac Toe';
+
+
+
+
+
