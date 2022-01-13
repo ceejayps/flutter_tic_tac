@@ -107,7 +107,20 @@ class _MainPageState extends State<MainPage> {
     final value = matrix[x][y];
     final color = getFieldColor(value);
 
+    return Container(
+      margin: EdgeInsets.all(4),
+      child: ElevatedButton(
+        style: ElevatedButton.styleFrom(
+          minimumSize: Size(size, size),
+          primary: color,
+        ),
+        child: Text(value, style: TextStyle(fontSize: 32)),
+        onPressed: () => selectField(value, x, y),
+      ),
+    );
+  }
 
+ 
 
 
 
