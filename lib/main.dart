@@ -25,3 +25,14 @@ class MyApp extends StatelessWidget {
         home: MainPage(title: title),
       );
 }
+
+class MainPage extends StatefulWidget {
+  final String title;
+
+  const MainPage({
+    @required this.title,
+  });
+
+
+
+
