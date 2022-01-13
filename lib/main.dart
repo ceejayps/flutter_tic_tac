@@ -15,7 +15,13 @@ Future main() async {
 class MyApp extends StatelessWidget {
   static final String title = 'Tic Tac Toe';
 
-
-
-
-
+  @override
+  Widget build(BuildContext context) => MaterialApp(
+        debugShowCheckedModeBanner: false,
+        title: title,
+        theme: ThemeData(
+          primaryColor: Colors.blue,
+        ),
+        home: MainPage(title: title),
+      );
+}
