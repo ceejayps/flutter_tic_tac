@@ -141,6 +141,19 @@ class _MainPageState extends State<MainPage> {
       matrix.every((values) => values.every((value) => value != Player.none));
 
   /// Check out logic here: https://stackoverflow.com/a/1058804
+  bool isWinner(int x, int y) {
+    var col = 0, row = 0, diag = 0, rdiag = 0;
+    final player = matrix[x][y];
+    final n = countMatrix;
 
+    for (int i = 0; i < n; i++) {
+      if (matrix[x][i] == player) col++;
+      if (matrix[i][y] == player) row++;
+      if (matrix[i][i] == player) diag++;
+      if (matrix[i][n - i - 1] == player) rdiag++;
+    }
+
+    return row == n || col == n || diag == n || rdiag == n;
+  }
 
 
