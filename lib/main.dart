@@ -120,7 +120,23 @@ class _MainPageState extends State<MainPage> {
     );
   }
 
- 
+  void selectField(String value, int x, int y) {
+    if (value == Player.none) {
+      final newValue = lastMove == Player.X ? Player.O : Player.X;
+
+      setState(() {
+        lastMove = newValue;
+        matrix[x][y] = newValue;
+      });
+
+      if (isWinner(x, y)) {
+        showEndDialog('Player $newValue Won');
+      } else if (isEnd()) {
+        showEndDialog('Undecided Game');
+      }
+    }
+  }
+
 
 
 
