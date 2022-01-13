@@ -42,3 +42,15 @@ class Player {
   static const X = 'X';
   static const O = 'O';
 }
+
+class _MainPageState extends State<MainPage> {
+  static final countMatrix = 3;
+  static final double size = 92;
+
+  String lastMove = Player.none;
+  List<List<String>> matrix;
+
+
+
+
+
