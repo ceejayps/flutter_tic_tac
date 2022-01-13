@@ -97,7 +97,7 @@ class _MainPageState extends State<MainPage> {
       case Player.O:
         return Color(0xff92d4d2);
       case Player.X:
-        return Color(0xff92d4d2);
+        return Color(0xfffbc9cc);
       default:
         return Colors.white;
     }
