@@ -50,7 +50,7 @@ class _MainPageState extends State<MainPage> {
   String lastMove = Player.none;
   List<List<String>> matrix;
 
-\
+
 
 
 
