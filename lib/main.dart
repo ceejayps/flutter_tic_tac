@@ -83,6 +83,14 @@ class _MainPageState extends State<MainPage> {
   Widget buildRow(int x) {
     final values = matrix[x];
 
+    return Row(
+      mainAxisAlignment: MainAxisAlignment.center,
+      children: Utils.modelBuilder(
+        values,
+        (y, value) => buildField(x, y),
+      ),
+    );
+  }
 
 
 
