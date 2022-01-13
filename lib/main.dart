@@ -36,3 +36,9 @@ class MainPage extends StatefulWidget {
   @override
   _MainPageState createState() => _MainPageState();
 }
+
+class Player {
+  static const none = '';
+  static const X = 'X';
+  static const O = 'O';
+}
