@@ -127,7 +127,7 @@ class _MainPageState extends State<MainPage> {
       });
 
       if (isWinner(x, y)) {
-        showEndDialog('Player $newValue Won');
+        showEndDialog('Player $newValue you de winna');
       } else if (isEnd()) {
         showEndDialog("ya'll suck");
       }
