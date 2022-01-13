@@ -95,9 +95,9 @@ class _MainPageState extends State<MainPage> {
   Color getFieldColor(String value) {
     switch (value) {
       case Player.O:
-        return Colors.blue;
+        return Color(0xff92d4d2);
       case Player.X:
-        return Colors.red;
+        return Color(0xff92d4d2);
       default:
         return Colors.white;
     }
