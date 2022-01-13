@@ -69,6 +69,20 @@ class _MainPageState extends State<MainPage> {
   }
 
   @override
+  Widget build(BuildContext context) => Scaffold(
+        backgroundColor: getBackgroundColor(),
+        appBar: AppBar(
+          title: Text(widget.title),
+        ),
+        body: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: Utils.modelBuilder(matrix, (x, value) => buildRow(x)),
+        ),
+      );
+
+  Widget buildRow(int x) {
+    final values = matrix[x];
+
 
 
 
