@@ -33,6 +33,6 @@ class MainPage extends StatefulWidget {
     @required this.title,
   });
 
-
-
-
+  @override
+  _MainPageState createState() => _MainPageState();
+}
