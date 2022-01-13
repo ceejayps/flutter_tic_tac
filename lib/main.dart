@@ -129,7 +129,7 @@ class _MainPageState extends State<MainPage> {
       if (isWinner(x, y)) {
         showEndDialog('Player $newValue Won');
       } else if (isEnd()) {
-        showEndDialog('Undecided Game');
+        showEndDialog("ya'll suck");
       }
     }
   }
@@ -137,7 +137,7 @@ class _MainPageState extends State<MainPage> {
   bool isEnd() =>
       matrix.every((values) => values.every((value) => value != Player.none));
 
-  /// Check out logic here: https://stackoverflow.com/a/1058804
+  // Check out logic here: https://stackoverflow.com/a/1058804
   bool isWinner(int x, int y) {
     var col = 0, row = 0, diag = 0, rdiag = 0;
     final player = matrix[x][y];
@@ -158,14 +158,14 @@ class _MainPageState extends State<MainPage> {
         barrierDismissible: false,
         builder: (context) => AlertDialog(
           title: Text(title),
-          content: Text('Press to Restart the Game'),
+          content: Text('Press to Restarto de Gameo'),
           actions: [
             ElevatedButton(
               onPressed: () {
                 setEmptyFields();
                 Navigator.of(context).pop();
               },
-              child: Text('Restart'),
+              child: Text('Restarto'),
             )
           ],
         ),
