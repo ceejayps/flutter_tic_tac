@@ -20,7 +20,7 @@ class MyApp extends StatelessWidget {
         debugShowCheckedModeBanner: false,
         title: title,
         theme: ThemeData(
-          primaryColor: Colors.blue,
+          primaryColor: Colors.pink.shade50,
         ),
         home: MainPage(title: title),
       );
