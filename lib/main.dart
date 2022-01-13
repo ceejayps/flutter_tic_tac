@@ -103,6 +103,10 @@ class _MainPageState extends State<MainPage> {
     }
   }
 
+  Widget buildField(int x, int y) {
+    final value = matrix[x][y];
+    final color = getFieldColor(value);
+
 
 
 
