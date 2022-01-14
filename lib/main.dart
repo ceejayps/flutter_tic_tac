@@ -75,7 +75,7 @@ class _MainPageState extends State<MainPage> {
         backgroundColor: getBackgroundColor(),
         appBar: AppBar(
           title: Text(
-            "le tac toe",
+            "Le Tac Toe",
             style: TextStyle(
                 color: Colors.white, fontSize: 30, fontWeight: FontWeight.bold),
           ),
