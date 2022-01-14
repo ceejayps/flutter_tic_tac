@@ -1,3 +1,5 @@
+import 'dart:ui';
+
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:tic_tac_toe_example/utils.dart';
@@ -71,6 +73,16 @@ class _MainPageState extends State<MainPage> {
   @override
   Widget build(BuildContext context) => Scaffold(
         backgroundColor: getBackgroundColor(),
+        appBar: AppBar(
+            title: Text(
+              "le tac toe",
+              style: TextStyle(
+                  color: Colors.white,
+                  fontSize: 50,
+                  fontWeight: FontWeight.bold),
+            ),
+            backgroundColor: Colors.transparent,
+            elevation: 0.0),
         body: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: Utils.modelBuilder(matrix, (x, value) => buildRow(x)),
