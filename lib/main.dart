@@ -78,7 +78,7 @@ class _MainPageState extends State<MainPage> {
               "le tac toe",
               style: TextStyle(
                   color: Colors.white,
-                  fontSize: 50,
+                  fontSize: 30,
                   fontWeight: FontWeight.bold),
             ),
             backgroundColor: Colors.transparent,
