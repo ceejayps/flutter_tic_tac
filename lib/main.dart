@@ -74,15 +74,14 @@ class _MainPageState extends State<MainPage> {
   Widget build(BuildContext context) => Scaffold(
         backgroundColor: getBackgroundColor(),
         appBar: AppBar(
-            title: Text(
-              "le tac toe",
-              style: TextStyle(
-                  color: Colors.white,
-                  fontSize: 30,
-                  fontWeight: FontWeight.bold),
-            ),
-            backgroundColor: Colors.transparent,
-            elevation: 0.0),
+          title: Text(
+            "le tac toe",
+            style: TextStyle(
+                color: Colors.white, fontSize: 30, fontWeight: FontWeight.bold),
+          ),
+          backgroundColor: Colors.transparent,
+          // elevation: 0.0
+        ),
         body: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: Utils.modelBuilder(matrix, (x, value) => buildRow(x)),
